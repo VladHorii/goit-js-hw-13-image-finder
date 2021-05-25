@@ -36,8 +36,11 @@ refs.loadMore.addEventListener('click', e => {
     refs.gallery.insertAdjacentHTML('beforeend', gallery(r));
     window.scrollTo({
       behavior: 'smooth',
-      top: window.pageYOffset + 350 + 20,
+      top: window.pageYOffset + document.documentElement.clientHeight - 150,
     });
+    // setTimeout(() => {
+
+    // }, 250);
   });
 });
 
